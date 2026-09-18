@@ -1,149 +1,15 @@
 <div class="calendar-wrapper">
-    <!-- Primera Semana -->
+    <!-- Jornadas Institucionales Sede Quito -->
     <div class="week-section week-one">
-        <h3 class="calendar-main-title fade-in-cascade" style="animation-delay: 0.1s;">Primera Semana</h3>
+        <h3 class="calendar-main-title fade-in-cascade" style="animation-delay: 0.1s;">Cronograma Sede Quito - Período 69 (21 al 24 de Septiembre)</h3>
         
         <div class="timeline-container">
             <div class="timeline-cards top-cards">
-                <!-- Day 14 -->
+                <!-- Day 21 - Lunes -->
                 <div class="calendar-item fade-in-cascade" style="animation-delay: 0.2s; background-image: url('assets/img/formacion.png');"
-                     [class.today-card]="isToday(14, 'SEPTIEMBRE')"
-                     (mouseenter)="setHover(14)" (mouseleave)="setHover(null)"
-                     [routerLink]="['/teacher_training']" [queryParams]="{ tab: 'tab1' }">
-                    <div class="card-overlay"></div>
-                    <div class="card-content">
-                        <div class="date-header">
-                            <span class="day">14</span>
-                            <span class="month">SEPTIEMBRE</span>
-                        </div>
-                        <div class="content-body">
-                            <h4 class="category">JORNADAS GENERALES</h4>
-                            <p class="location"><i class="fas fa-map-marker-alt"></i> Teatro Carlos Crespi</p>
-                        </div>
-                        <div class="card-action">
-                            <span class="btn-ver-mas">Ver más</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Day 15 -->
-                <div class="calendar-item fade-in-cascade" style="animation-delay: 0.3s; background-image: url('assets/img/formacion.png');"
-                     [class.today-card]="isToday(15, 'SEPTIEMBRE')"
-                     (mouseenter)="setHover(15)" (mouseleave)="setHover(null)"
-                     [routerLink]="['/teacher_training']" [queryParams]="{ tab: 'tab2' }">
-                    <div class="card-overlay"></div>
-                    <div class="card-content">
-                        <div class="date-header">
-                            <span class="day">15</span>
-                            <span class="month">SEPTIEMBRE</span>
-                        </div>
-                        <div class="content-body">
-                            <h4 class="category">JORNADAS GENERALES</h4>
-                            <p class="location"><i class="fas fa-map-marker-alt"></i> Teatro Carlos Crespi</p>
-                        </div>
-                        <div class="card-action">
-                            <span class="btn-ver-mas">Ver más</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Day 16 -->
-                <div class="calendar-item fade-in-cascade" style="animation-delay: 0.4s; background-image: url('assets/img/_docentes.png');"
-                     [class.today-card]="isToday(16, 'SEPTIEMBRE')"
-                     (mouseenter)="setHover(16)" (mouseleave)="setHover(null)">
-                    <div class="card-overlay"></div>
-                    <div class="card-content">
-                        <div class="date-header">
-                            <span class="day">16</span>
-                            <span class="month">SEPTIEMBRE</span>
-                        </div>
-                        <div class="content-body">
-                            <h4 class="category">ACTIVIDADES REGULARES</h4>
-                            <p class="location"><i class="fas fa-map-marker-alt"></i> Sede Cuenca</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Day 17 -->
-                <div class="calendar-item fade-in-cascade" style="animation-delay: 0.5s; background-image: url('assets/img/docentes.png');"
-                     [class.today-card]="isToday(17, 'SEPTIEMBRE')"
-                     (mouseenter)="setHover(17)" (mouseleave)="setHover(null)"
-                     [routerLink]="['/curriculum_reform']" [queryParams]="{ tab: 'tab1' }">
-                    <div class="card-overlay"></div>
-                    <div class="card-content">
-                        <div class="date-header">
-                            <span class="day">17</span>
-                            <span class="month">SEPTIEMBRE</span>
-                        </div>
-                        <div class="content-body">
-                            <h4 class="category">JORNADAS TÉCNICAS</h4>
-                            <p class="location"><i class="fas fa-map-marker-alt"></i> Edificio Guillermo Mensi</p>
-                        </div>
-                        <div class="card-action">
-                            <span class="btn-ver-mas">Ver más</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Day 18 -->
-                <div class="calendar-item fade-in-cascade" style="animation-delay: 0.6s; background-image: url('assets/img/docentes.png');"
-                     [class.today-card]="isToday(18, 'SEPTIEMBRE')"
-                     (mouseenter)="setHover(18)" (mouseleave)="setHover(null)"
-                     [routerLink]="['/curriculum_reform']" [queryParams]="{ tab: 'tab2' }">
-                    <div class="card-overlay"></div>
-                    <div class="card-content">
-                        <div class="date-header">
-                            <span class="day">18</span>
-                            <span class="month">SEPTIEMBRE</span>
-                        </div>
-                        <div class="content-body">
-                            <h4 class="category">JORNADAS TÉCNICAS</h4>
-                            <p class="location"><i class="fas fa-map-marker-alt"></i> Edificio Guillermo Mensi</p>
-                        </div>
-                        <div class="card-action">
-                            <span class="btn-ver-mas">Ver más</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="timeline-line fill-line-anim">
-                <div class="timeline-node" [class.hovered-node]="hoveredDay === 14" [class.today-node]="isToday(14, 'SEPTIEMBRE')"></div>
-                <div class="timeline-node" [class.hovered-node]="hoveredDay === 15" [class.today-node]="isToday(15, 'SEPTIEMBRE')"></div>
-                <div class="timeline-node" [class.hovered-node]="hoveredDay === 16" [class.today-node]="isToday(16, 'SEPTIEMBRE')"></div>
-                <div class="timeline-node" [class.hovered-node]="hoveredDay === 17" [class.today-node]="isToday(17, 'SEPTIEMBRE')"></div>
-                <div class="timeline-node" [class.hovered-node]="hoveredDay === 18" [class.today-node]="isToday(18, 'SEPTIEMBRE')"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Acciones / Botones -->
-    <div class="footer-action fade-in-cascade" style="animation-delay: 0.7s;">
-        <!--
-        <button routerLink="/form" class="btn-ups-style">
-            <i class="fas fa-user-plus"></i> + INSCRIPCIONES TALLER
-        </button>
-        -->
-        <a [routerLink]="['/groups']" class="btn-ups-style" style="text-decoration: none; cursor: pointer;">
-            <i class="fas fa-users"></i> VER GRUPOS DE TRABAJO
-        </a>
-    </div>
-
-    <!-- Segunda Semana -->
-    <div class="week-section week-two">
-        <h3 class="calendar-main-title fade-in-cascade" style="animation-delay: 0.8s;">Segunda Semana</h3>
-        
-        <div class="timeline-container">
-            <div class="timeline-line fill-line-anim">
-                <div class="timeline-node" [class.hovered-node]="hoveredDay === 21" [class.today-node]="isToday(21, 'SEPTIEMBRE')"></div>
-                <div class="timeline-node" [class.hovered-node]="hoveredDay === 22" [class.today-node]="isToday(22, 'SEPTIEMBRE')"></div>
-                <div class="timeline-node" [class.hovered-node]="hoveredDay === 23" [class.today-node]="isToday(23, 'SEPTIEMBRE')"></div>
-                <div class="timeline-node" [class.hovered-node]="hoveredDay === 24" [class.today-node]="isToday(24, 'SEPTIEMBRE')"></div>
-                <div class="timeline-node" [class.hovered-node]="hoveredDay === 25" [class.today-node]="isToday(25, 'SEPTIEMBRE')"></div>
-            </div>
-            
-            <div class="timeline-cards bottom-cards">
-                <!-- Day 21 -->
-                <div class="calendar-item fade-in-cascade" style="animation-delay: 0.9s; background-image: url('assets/img/investigacion.png');"
                      [class.today-card]="isToday(21, 'SEPTIEMBRE')"
                      (mouseenter)="setHover(21)" (mouseleave)="setHover(null)"
-                     [routerLink]="['/investigation']" [queryParams]="{ tab: 'tab1' }">
+                     [routerLink]="['/teacher_training']" [queryParams]="{ tab: 'tab1' }">
                     <div class="card-overlay"></div>
                     <div class="card-content">
                         <div class="date-header">
@@ -151,19 +17,20 @@
                             <span class="month">SEPTIEMBRE</span>
                         </div>
                         <div class="content-body">
-                            <h4 class="category">JORNADAS DE INVESTIGACIÓN</h4>
-                            <p class="location"><i class="fas fa-map-marker-alt"></i> Sede Cuenca</p>
+                            <h4 class="category">JORNADAS GENERALES - DÍA 1</h4>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Coliseo Campus El Girón</p>
                         </div>
                         <div class="card-action">
                             <span class="btn-ver-mas">Ver más</span>
                         </div>
                     </div>
                 </div>
-                <!-- Day 22 -->
-                <div class="calendar-item fade-in-cascade" style="animation-delay: 1.0s; background-image: url('assets/img/investigacion.png');"
+
+                <!-- Day 22 - Martes -->
+                <div class="calendar-item fade-in-cascade" style="animation-delay: 0.3s; background-image: url('assets/img/formacion.png');"
                      [class.today-card]="isToday(22, 'SEPTIEMBRE')"
                      (mouseenter)="setHover(22)" (mouseleave)="setHover(null)"
-                     [routerLink]="['/investigation']" [queryParams]="{ tab: 'tab1' }">
+                     [routerLink]="['/teacher_training']" [queryParams]="{ tab: 'tab2' }">
                     <div class="card-overlay"></div>
                     <div class="card-content">
                         <div class="date-header">
@@ -171,19 +38,20 @@
                             <span class="month">SEPTIEMBRE</span>
                         </div>
                         <div class="content-body">
-                            <h4 class="category">JORNADAS DE INVESTIGACIÓN</h4>
-                            <p class="location"><i class="fas fa-map-marker-alt"></i> Sede Cuenca</p>
+                            <h4 class="category">JORNADAS GENERALES - DÍA 2</h4>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Auditorio principal</p>
                         </div>
                         <div class="card-action">
                             <span class="btn-ver-mas">Ver más</span>
                         </div>
                     </div>
                 </div>
-                <!-- Day 23 -->
-                <div class="calendar-item fade-in-cascade" style="animation-delay: 1.1s; background-image: url('assets/img/investigacion.png');"
+
+                <!-- Day 23 - Miércoles -->
+                <div class="calendar-item fade-in-cascade" style="animation-delay: 0.4s; background-image: url('assets/img/docentes.png');"
                      [class.today-card]="isToday(23, 'SEPTIEMBRE')"
                      (mouseenter)="setHover(23)" (mouseleave)="setHover(null)"
-                     [routerLink]="['/investigation']" [queryParams]="{ tab: 'tab1' }">
+                     [routerLink]="['/teacher_training']" [queryParams]="{ tab: 'tab3' }">
                     <div class="card-overlay"></div>
                     <div class="card-content">
                         <div class="date-header">
@@ -191,19 +59,20 @@
                             <span class="month">SEPTIEMBRE</span>
                         </div>
                         <div class="content-body">
-                            <h4 class="category">JORNADAS DE INVESTIGACIÓN</h4>
-                            <p class="location"><i class="fas fa-map-marker-alt"></i> Sede Cuenca</p>
+                            <h4 class="category">JORNADAS TÉCNICAS - DÍA 3</h4>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Auditorio principal</p>
                         </div>
                         <div class="card-action">
                             <span class="btn-ver-mas">Ver más</span>
                         </div>
                     </div>
                 </div>
-                <!-- Day 24 -->
-                <div class="calendar-item fade-in-cascade" style="animation-delay: 1.2s; background-image: url('assets/img/lala.png');"
+
+                <!-- Day 24 - Jueves -->
+                <div class="calendar-item fade-in-cascade" style="animation-delay: 0.5s; background-image: url('assets/img/docentes.png');"
                      [class.today-card]="isToday(24, 'SEPTIEMBRE')"
                      (mouseenter)="setHover(24)" (mouseleave)="setHover(null)"
-                     [routerLink]="['/lala']">
+                     [routerLink]="['/teacher_training']" [queryParams]="{ tab: 'tab4' }">
                     <div class="card-overlay"></div>
                     <div class="card-content">
                         <div class="date-header">
@@ -211,29 +80,8 @@
                             <span class="month">SEPTIEMBRE</span>
                         </div>
                         <div class="content-body">
-                            <h4 class="category">FORMACIÓN CONSEJERÍA ACADÉMICA - LALA</h4>
-                            <p class="location"><i class="fas fa-map-marker-alt"></i> Parroquia María Auxiliadora</p>
-                        </div>
-                        <div class="card-action">
-                            <span class="btn-ver-mas">Ver más</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- Day 25 -->
-                <div class="calendar-item fade-in-cascade" style="animation-delay: 1.3s; background-image: url('assets/img/seguridad.png');"
-                     [class.today-card]="isToday(25, 'SEPTIEMBRE')"
-                     (mouseenter)="setHover(25)" (mouseleave)="setHover(null)"
-                     [routerLink]="['/unissma']">
-                    <div class="card-overlay"></div>
-                    <div class="card-content">
-                        <div class="date-header">
-                            <span class="day">25</span>
-                            <span class="month">SEPTIEMBRE</span>
-                        </div>
-                        <div class="content-body">
-                            <h4 class="category">UNISSMA</h4>
-                            <h4 class="category">REUNIONES DE CARRERAS</h4>
-                            <p class="location"><i class="fas fa-map-marker-alt"></i> Sede Cuenca</p>
+                            <h4 class="category">JORNADAS TÉCNICAS - DÍA 4</h4>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Auditorio principal</p>
                         </div>
                         <div class="card-action">
                             <span class="btn-ver-mas">Ver más</span>
@@ -241,6 +89,20 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="timeline-line fill-line-anim">
+                <div class="timeline-node" [class.hovered-node]="hoveredDay === 21" [class.today-node]="isToday(21, 'SEPTIEMBRE')"></div>
+                <div class="timeline-node" [class.hovered-node]="hoveredDay === 22" [class.today-node]="isToday(22, 'SEPTIEMBRE')"></div>
+                <div class="timeline-node" [class.hovered-node]="hoveredDay === 23" [class.today-node]="isToday(23, 'SEPTIEMBRE')"></div>
+                <div class="timeline-node" [class.hovered-node]="hoveredDay === 24" [class.today-node]="isToday(24, 'SEPTIEMBRE')"></div>
+            </div>
         </div>
+    </div>
+
+    <!-- Acciones / Botones -->
+    <div class="footer-action fade-in-cascade" style="animation-delay: 0.6s;">
+        <a [routerLink]="['/groups']" class="btn-ups-style" style="text-decoration: none; cursor: pointer;">
+            <i class="fas fa-users"></i> VER GRUPOS DE TRABAJO
+        </a>
     </div>
 </div>

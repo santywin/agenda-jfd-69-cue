@@ -22,8 +22,7 @@ export class CalendarComponent implements OnInit {
     }
 
     isToday(day: number, monthStr: string): boolean {
-        // Simple mock check for demonstration if it's March
-        if (monthStr === 'MARZO' && this.todayMonth === 2 && this.todayDay === day) {
+        if (monthStr === 'SEPTIEMBRE' && this.todayMonth === 8 && this.todayDay === day) {
             return true;
         }
         return false;

@@ -1,4 +1,4 @@
-﻿import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -32,7 +32,7 @@ const routes: Routes = [
     { path: 'groups', component: GroupsComponent },
     { path: 'investigation', component: InvestigacionComponent },
     { path: 'unissma', component: UnissmaComponent},
-    { path: 'curriculum_reform', component: AcademicoComponent},
+    { path: 'curriculum_reform', component: TrainingComponent},
     { path: 'lala', component: LalaComponent},
     { path: 'acreditation', component: AcreditacionComponent},
     { path: 'avac', component: AvacComponent},

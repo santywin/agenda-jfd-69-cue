@@ -19,8 +19,8 @@ export class TrainingComponent implements OnInit {
     ngOnInit() {
         this.route.queryParams.subscribe(params => {
             const tab = params['tab'];
-            if (tab === 'tab2') {
-                this.activeTab = 'tab2';
+            if (tab === 'tab2' || tab === 'tab3' || tab === 'tab4') {
+                this.activeTab = tab;
             } else {
                 this.activeTab = 'tab1';
             }

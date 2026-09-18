@@ -10,30 +10,22 @@
             </div>
         </div>
 
-
         <div class="hero-text-container">
-
             <div class="brand-header">
                 <img src="assets/img/logoupscolor.png" alt="Logo UPS" class="hero-logo" />
             </div>
 
             <h1 class="main-title">
                 JORNADAS <br>
-                <span class="highlight">GENERALES</span>
+                <span class="highlight">INSTITUCIONALES</span>
             </h1>
 
             <div class="top-tag">
                 <span class="tag-text">VICERRECTORADO ACADÉMICO</span>
                 <span class="tag-divider">•</span>
-                <span class="tag-text"> Sede Cuenca</span>
+                <span class="tag-text">Sede Quito</span>
             </div>
-            <!--
-            <div class="hero-actions">
-                <a class="btn-primary">SEDE CUENCA</a>
-            </div>
-            -->
         </div>
-
     </section>
 
     <div class="container_cro">
@@ -43,7 +35,7 @@
                    [ngClass]="{ 'active': activeTab === 'tab1' }"
                    [routerLink]="['/teacher_training']"
                    [queryParams]="{ tab: 'tab1' }">
-                    Lunes, 14 de Septiembre
+                    Lunes, 21 de Septiembre
                 </a>
             </li>
             <li class="nav-item">
@@ -51,13 +43,29 @@
                    [ngClass]="{ 'active': activeTab === 'tab2' }"
                    [routerLink]="['/teacher_training']"
                    [queryParams]="{ tab: 'tab2' }">
-                    Martes, 15 de Septiembre
+                    Martes, 22 de Septiembre
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   [ngClass]="{ 'active': activeTab === 'tab3' }"
+                   [routerLink]="['/teacher_training']"
+                   [queryParams]="{ tab: 'tab3' }">
+                    Miércoles, 23 de Septiembre
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   [ngClass]="{ 'active': activeTab === 'tab4' }"
+                   [routerLink]="['/teacher_training']"
+                   [queryParams]="{ tab: 'tab4' }">
+                    Jueves, 24 de Septiembre
                 </a>
             </li>
         </ul>
 
         <div class="tab-content mt-5">
-            <!-- TAB 1: LUNES 16 DE MARZO -->
+            <!-- TAB 1: LUNES 21 DE SEPTIEMBRE -->
             <div class="tab-pane" [ngClass]="{ 'show active': activeTab === 'tab1' }" *ngIf="activeTab === 'tab1'">
                 <ul class="timeline">
                     <!-- 01: Momento de Oración -->
@@ -66,19 +74,19 @@
                         <div class="timeline-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 09h00 - 09h10
+                                    <i class="fas fa-clock"></i> 08h30 - 08h40
                                 </span>
-                                <span class="card-tag">Inauguración</span>
+                                <span class="card-tag">Apertura</span>
                             </div>
                             <h4 class="card-title">Momento de Oración</h4>
                             <div class="card-meta">
                                 <div class="meta-row location">
                                     <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <span>Teatro Carlos Crespi</span>
+                                    <span>Coliseo Campus El Girón</span>
                                 </div>
                                 <div class="meta-row speaker">
                                     <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
-                                    <span>Departamento de Pastoral</span>
+                                    <span>Pastoral</span>
                                 </div>
                             </div>
                         </div>
@@ -90,7 +98,7 @@
                         <div class="timeline-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 09h10 - 10h40
+                                    <i class="fas fa-clock"></i> 08h40 - 10h10
                                 </span>
                                 <span class="card-tag">Intervención del Rector</span>
                             </div>
@@ -98,11 +106,11 @@
                             <div class="card-meta">
                                 <div class="meta-row location">
                                     <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <span>Teatro Carlos Crespi</span>
+                                    <span>Coliseo Campus El Girón</span>
                                 </div>
                                 <div class="meta-row speaker">
                                     <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
-                                    <span>P. Juan Cárdenas sdb. PhD.</span>
+                                    <span>P. Juan Cárdenas sdb, Ph.D.</span>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +122,7 @@
                         <div class="timeline-panel break-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 10h40 - 11h00
+                                    <i class="fas fa-clock"></i> 10h10 - 10h40
                                 </span>
                                 <span class="card-tag break-tag">Coffee Break</span>
                             </div>
@@ -126,13 +134,13 @@
                         </div>
                     </li>
 
-                    <!-- 04: Calidad de la Educación Superior en la Era Digital: Corresponsabilidad Docente -->
+                    <!-- 04: Conferencia Alexis Oviedo -->
                     <li class="timeline-item color-2">
                         <div class="timeline-badge">04</div>
                         <div class="timeline-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 11h00 - 12h00
+                                    <i class="fas fa-clock"></i> 10h40 - 11h40
                                 </span>
                                 <span class="card-tag">Conferencia</span>
                             </div>
@@ -140,47 +148,47 @@
                             <div class="card-meta">
                                 <div class="meta-row location">
                                     <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <span>Teatro Carlos Crespi</span>
+                                    <span>Coliseo Campus El Girón</span>
                                 </div>
                                 <div class="meta-row speaker">
                                     <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
-                                    <span>Alexis Oviedo Oviedo - Universidad Andina Simón Bolívar</span>
+                                    <span>Alexis Oviedo Oviedo · Universidad Andina Simón Bolívar, Sede Ecuador</span>
                                 </div>
                             </div>
                         </div>
                     </li>
 
-                    <!-- 05: La UPS ante la Reforma Curricular: Sentido, Alcance e Implicaciones para la Práctica Docente -->
+                    <!-- 05: Conferencia Fernando Pesántez -->
                     <li class="timeline-item color-1">
-                        <div class="timeline-badge">04</div>
+                        <div class="timeline-badge">05</div>
                         <div class="timeline-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 12h00 - 13h00
+                                    <i class="fas fa-clock"></i> 11h40 - 12h40
                                 </span>
                                 <span class="card-tag">Conferencia</span>
                             </div>
-                            <h4 class="card-title">Reforma Curricular UPS 2035: Alcance, Niveles de Concreción y Hoja de Ruta</h4>
+                            <h4 class="card-title">De la Reforma de Carreras al Rediseño de la Arquitectura Académica UPS 2035</h4>
                             <div class="card-meta">
                                 <div class="meta-row location">
                                     <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <span>Teatro Carlos Crespi</span>
+                                    <span>Coliseo Campus El Girón</span>
                                 </div>
                                 <div class="meta-row speaker">
                                     <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
-                                    <span>Ing. Ángela Flores PhD - Lcda. Susana Castro PhD.</span>
+                                    <span>Lcdo. Fernando Pesantez, Ph.D.</span>
                                 </div>
                             </div>
                         </div>
                     </li>
 
-                    <!-- 05: Fin Jornada Matutina -->
+                    <!-- 06: Fin Jornada Matutina -->
                     <li class="timeline-item color-2 is-break">
-                        <div class="timeline-badge">04</div>
+                        <div class="timeline-badge">06</div>
                         <div class="timeline-panel break-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 13h00
+                                    <i class="fas fa-clock"></i> 12h40
                                 </span>
                             </div>
 
@@ -191,11 +199,9 @@
                         </div>
                     </li>
 
-
-
-                    <!-- 06: Taller IA -->
+                    <!-- 07: Taller 1 -->
                     <li class="timeline-item color-1">
-                        <div class="timeline-badge">06</div>
+                        <div class="timeline-badge">07</div>
                         <div class="timeline-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
@@ -204,29 +210,147 @@
                                 <span class="card-tag">Taller 1</span>
                             </div>
                             <h4 class="card-title">Construcción de Insumos Estratégicos para el Macrocurrículo Institucional UPS con Horizonte al 2035</h4>
+                            <p class="card-description" style="color: #666; font-size: 13px; margin-top: 5px;">
+                                Producto: Matriz de aportes estratégicos por área del conocimiento.
+                            </p>
                             <div class="card-meta">
                                 <div class="meta-row location">
                                     <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <span>Edificio Guillermo Mensi</span>
+                                    <span>Aulas de trabajo por grupos</span>
+                                </div>
+                                <div class="meta-row speaker">
+                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
+                                    <span>Vicerrectorado Académico · Directores de Área · Facilitadores de sede</span>
                                 </div>
                             </div>
-
-                            <div class="card-action">
-                                <button class="btn-location-pill" (click)="showGroupInfoTaller1()">
-                                    <i class="fas fa-location-dot"></i> Ver Ubicaciones
-                                </button>
-                            </div>
-
                         </div>
                     </li>
 
-                    <!-- 07: Receso -->
+                    <!-- 08: Plenaria 1 -->
+                    <li class="timeline-item color-1">
+                        <div class="timeline-badge">08</div>
+                        <div class="timeline-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 16h20 - 17h30
+                                </span>
+                                <span class="card-tag">Plenaria 1</span>
+                            </div>
+                            <h4 class="card-title">Presentación, Contraste y Priorización de Aportes por Áreas del Conocimiento (5 minutos por grupo)</h4>
+                            <div class="card-meta">
+                                <div class="meta-row location">
+                                    <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <span>Coliseo Campus El Girón</span>
+                                </div>
+                                <div class="meta-row speaker">
+                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
+                                    <span>Relatores de los Grupos · Directores de Área</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 09: Fin de Jornada -->
                     <li class="timeline-item color-2 is-break">
-                        <div class="timeline-badge">07</div>
+                        <div class="timeline-badge">09</div>
                         <div class="timeline-panel break-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 16h20 - 16h40
+                                    <i class="fas fa-clock"></i> 17h30
+                                </span>
+                            </div>
+
+                            <div class="meta-row location">
+                                <div class="meta-icon"><i class="fas fa-home"></i></div>
+                                <span>FIN JORNADA</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- TAB 2: MARTES 22 DE SEPTIEMBRE -->
+            <div class="tab-pane" [ngClass]="{ 'show active': activeTab === 'tab2' }" *ngIf="activeTab === 'tab2'">
+                <ul class="timeline">
+                    <!-- 01: Momento de Oración -->
+                    <li class="timeline-item color-1">
+                        <div class="timeline-badge">01</div>
+                        <div class="timeline-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 08h30 - 08h40
+                                </span>
+                                <span class="card-tag">Apertura</span>
+                            </div>
+                            <h4 class="card-title">Momento de Oración</h4>
+                            <div class="card-meta">
+                                <div class="meta-row location">
+                                    <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <span>Auditorio principal</span>
+                                </div>
+                                <div class="meta-row speaker">
+                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
+                                    <span>Pastoral · Vicerrectorado Académico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 02: Síntesis -->
+                    <li class="timeline-item color-2">
+                        <div class="timeline-badge">02</div>
+                        <div class="timeline-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 08h40 - 09h10
+                                </span>
+                                <span class="card-tag">Síntesis</span>
+                            </div>
+                            <h4 class="card-title">Síntesis del Día Anterior</h4>
+                            <div class="card-meta">
+                                <div class="meta-row location">
+                                    <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <span>Auditorio principal</span>
+                                </div>
+                                <div class="meta-row speaker">
+                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
+                                    <span>Fabian Cuesta</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 03: Conferencia Ángela Flores -->
+                    <li class="timeline-item color-1">
+                        <div class="timeline-badge">03</div>
+                        <div class="timeline-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 09h10 - 10h10
+                                </span>
+                                <span class="card-tag">Conferencia</span>
+                            </div>
+                            <h4 class="card-title">La Reforma Curricular UPS: Antecedentes, Documentos Institucionales y Hoja de Ruta</h4>
+                            <div class="card-meta">
+                                <div class="meta-row location">
+                                    <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <span>Auditorio principal</span>
+                                </div>
+                                <div class="meta-row speaker">
+                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
+                                    <span>Ing. Ángela Flores, Ph.D.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 04: Receso -->
+                    <li class="timeline-item color-2 is-break">
+                        <div class="timeline-badge">04</div>
+                        <div class="timeline-panel break-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 10h10 - 10h40
                                 </span>
                                 <span class="card-tag break-tag">Coffee Break</span>
                             </div>
@@ -238,25 +362,324 @@
                         </div>
                     </li>
 
-                    <!-- 08: Taller IA -->
+                    <!-- 05: Taller 2 -->
+                    <li class="timeline-item color-1">
+                        <div class="timeline-badge">05</div>
+                        <div class="timeline-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 10h40 - 12h30
+                                </span>
+                                <span class="card-tag">Taller 2</span>
+                            </div>
+                            <h4 class="card-title">La Sociedad, la Persona y la Identidad de la UPS hacia 2035</h4>
+                            <p class="card-description" style="color: #666; font-size: 13px; margin-top: 5px;">
+                                Producto: Criterios orientadores para el Macrocurrículo.
+                            </p>
+                            <div class="card-meta">
+                                <div class="meta-row location">
+                                    <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <span>Aulas de trabajo por áreas</span>
+                                </div>
+                                <div class="meta-row speaker">
+                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
+                                    <span>Directores de Área del Conocimiento</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 06: Fin Jornada Matutina -->
+                    <li class="timeline-item color-2 is-break">
+                        <div class="timeline-badge">06</div>
+                        <div class="timeline-panel break-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 12h30
+                                </span>
+                            </div>
+
+                            <div class="meta-row location">
+                                <div class="meta-icon"><i class="fas fa-utensils"></i></div>
+                                <span>FIN JORNADA MATUTINA</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 07: Taller 3 -->
+                    <li class="timeline-item color-2">
+                        <div class="timeline-badge">07</div>
+                        <div class="timeline-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 14h30 - 16h15
+                                </span>
+                                <span class="card-tag">Taller 3</span>
+                            </div>
+                            <h4 class="card-title">Reorganización del Conocimiento y Transformación de las Profesiones hacia 2035</h4>
+                            <p class="card-description" style="color: #666; font-size: 13px; margin-top: 5px;">
+                                Producto: Implicaciones curriculares y transformaciones prioritarias por área.
+                            </p>
+                            <div class="card-meta">
+                                <div class="meta-row location">
+                                    <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <span>Aulas de trabajo por áreas</span>
+                                </div>
+                                <div class="meta-row speaker">
+                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
+                                    <span>Directores de Área del Conocimiento</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 08: Plenaria -->
+                    <li class="timeline-item color-2">
+                        <div class="timeline-badge">08</div>
+                        <div class="timeline-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 16h15 - 17h30
+                                </span>
+                                <span class="card-tag">Plenaria</span>
+                            </div>
+                            <h4 class="card-title">Presentación y Contraste de los Resultados de los Talleres 2 y 3</h4>
+                            <div class="card-meta">
+                                <div class="meta-row location">
+                                    <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <span>Auditorio principal</span>
+                                </div>
+                                <div class="meta-row speaker">
+                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
+                                    <span>Relatores de los Grupos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 09: Refrigerio -->
+                    <li class="timeline-item color-1 is-break">
+                        <div class="timeline-badge">09</div>
+                        <div class="timeline-panel break-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 17h30 - 18h00
+                                </span>
+                                <span class="card-tag break-tag">Refrigerio</span>
+                            </div>
+
+                            <div class="meta-row location">
+                                <div class="meta-icon"><i class="fas fa-coffee"></i></div>
+                                <span>REFRIGERIO</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 10: Fin de la Jornada Vespertina -->
+                    <li class="timeline-item color-2 is-break">
+                        <div class="timeline-badge">10</div>
+                        <div class="timeline-panel break-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 18h00
+                                </span>
+                            </div>
+
+                            <div class="meta-row location">
+                                <div class="meta-icon"><i class="fas fa-home"></i></div>
+                                <span>FIN JORNADA VESPERTINA</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- TAB 3: MIÉRCOLES 23 DE SEPTIEMBRE -->
+            <div class="tab-pane" [ngClass]="{ 'show active': activeTab === 'tab3' }" *ngIf="activeTab === 'tab3'">
+                <ul class="timeline">
+                    <!-- 01: Momento de Oración -->
+                    <li class="timeline-item color-1">
+                        <div class="timeline-badge">01</div>
+                        <div class="timeline-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 08h30 - 08h40
+                                </span>
+                                <span class="card-tag">Apertura</span>
+                            </div>
+                            <h4 class="card-title">Momento de Oración</h4>
+                            <div class="card-meta">
+                                <div class="meta-row location">
+                                    <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <span>Auditorio principal</span>
+                                </div>
+                                <div class="meta-row speaker">
+                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
+                                    <span>Departamento de Pastoral</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 02: Síntesis Talleres 2 y 3 -->
+                    <li class="timeline-item color-2">
+                        <div class="timeline-badge">02</div>
+                        <div class="timeline-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 08h40 - 09h10
+                                </span>
+                                <span class="card-tag">Síntesis</span>
+                            </div>
+                            <h4 class="card-title">Síntesis de los Talleres 2 y 3: Referentes y Transformaciones Priorizadas para el Macrocurrículo</h4>
+                            <div class="card-meta">
+                                <div class="meta-row location">
+                                    <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <span>Auditorio principal</span>
+                                </div>
+                                <div class="meta-row speaker">
+                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
+                                    <span>Dunia Ojeda</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 03: Taller 4 -->
+                    <li class="timeline-item color-1">
+                        <div class="timeline-badge">03</div>
+                        <div class="timeline-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 09h10 - 10h40
+                                </span>
+                                <span class="card-tag">Taller 4</span>
+                            </div>
+                            <h4 class="card-title">Transformación y Proyección dentro del Macrocurrículo, Aportes de Cada Área</h4>
+                            <p class="card-description" style="color: #666; font-size: 13px; margin-top: 5px;">
+                                Producto: Matriz consolidada de transformaciones, proyecciones e implicaciones para los perfiles formativos.
+                            </p>
+                            <div class="card-meta">
+                                <div class="meta-row location">
+                                    <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <span>Aulas de trabajo por áreas</span>
+                                </div>
+                                <div class="meta-row speaker">
+                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
+                                    <span>Directores y delegados de Área</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 04: Receso -->
+                    <li class="timeline-item color-2 is-break">
+                        <div class="timeline-badge">04</div>
+                        <div class="timeline-panel break-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 10h40 - 11h10
+                                </span>
+                                <span class="card-tag break-tag">Coffee Break</span>
+                            </div>
+
+                            <div class="meta-row location">
+                                <div class="meta-icon"><i class="fas fa-coffee"></i></div>
+                                <span>RECESO</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 05: Plenaria Taller 4 -->
+                    <li class="timeline-item color-1">
+                        <div class="timeline-badge">05</div>
+                        <div class="timeline-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 11h10 - 12h30
+                                </span>
+                                <span class="card-tag">Plenaria</span>
+                            </div>
+                            <h4 class="card-title">Plenaria del Taller 4: Contraste y Consolidación de Aportes</h4>
+                            <p class="card-description" style="color: #666; font-size: 13px; margin-top: 5px;">
+                                Cierre con implicaciones para el perfil de egreso.
+                            </p>
+                            <div class="card-meta">
+                                <div class="meta-row location">
+                                    <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <span>Auditorio principal</span>
+                                </div>
+                                <div class="meta-row speaker">
+                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
+                                    <span>Directores y delegados de Área</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 06: Fin Jornada Matutina -->
+                    <li class="timeline-item color-1 is-break">
+                        <div class="timeline-badge">06</div>
+                        <div class="timeline-panel break-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 12h30
+                                </span>
+                            </div>
+
+                            <div class="meta-row location">
+                                <div class="meta-icon"><i class="fas fa-utensils"></i></div>
+                                <span>FIN JORNADA MATUTINA</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 07: Conferencia Germán Parra -->
+                    <li class="timeline-item color-2">
+                        <div class="timeline-badge">07</div>
+                        <div class="timeline-panel">
+                            <div class="card-top-bar">
+                                <span class="card-time-badge">
+                                    <i class="fas fa-clock"></i> 14h30 - 15h30
+                                </span>
+                                <span class="card-tag">Conferencia</span>
+                            </div>
+                            <h4 class="card-title">Herramientas para el Diagnóstico del Perfil de Egreso en la Construcción del Currículo</h4>
+                            <div class="card-meta">
+                                <div class="meta-row location">
+                                    <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <span>Auditorio principal</span>
+                                </div>
+                                <div class="meta-row speaker">
+                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
+                                    <span>Germán Parra</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- 08: Taller 5 -->
                     <li class="timeline-item color-1">
                         <div class="timeline-badge">08</div>
                         <div class="timeline-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 16h40 - 18h00
+                                    <i class="fas fa-clock"></i> 15h30 - 17h30
                                 </span>
-                                <span class="card-tag">Plenaria 1</span>
+                                <span class="card-tag">Taller 5</span>
                             </div>
-                            <h4 class="card-title">Presentación, Contraste y Priorización de Aportes por Áreas del Conocimiento</h4>
+                            <h4 class="card-title">Elaboración de Herramientas para el Diagnóstico del Perfil de Egreso</h4>
+                            <p class="card-description" style="color: #666; font-size: 13px; margin-top: 5px;">
+                                Producto: Instrumentos y criterios de diagnóstico que serán utilizados en el trabajo del Día 4.
+                            </p>
                             <div class="card-meta">
                                 <div class="meta-row location">
                                     <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <span>Teatro Carlos Crespi</span>
+                                    <span>Aulas de trabajo por grupos</span>
                                 </div>
                                 <div class="meta-row speaker">
                                     <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
-                                    <span>Relatores de los Grupos</span>
+                                    <span>Equipo facilitador</span>
                                 </div>
                             </div>
                         </div>
@@ -281,11 +704,8 @@
                 </ul>
             </div>
 
-
-
-            <!-- TAB 2: MARTES 17 DE MARZO -->
-            <div class="tab-pane" [ngClass]="{ 'show active': activeTab === 'tab2' }" *ngIf="activeTab === 'tab2'">
-
+            <!-- TAB 4: JUEVES 24 DE SEPTIEMBRE -->
+            <div class="tab-pane" [ngClass]="{ 'show active': activeTab === 'tab4' }" *ngIf="activeTab === 'tab4'">
                 <ul class="timeline">
                     <!-- 01: Momento de Oración -->
                     <li class="timeline-item color-1">
@@ -301,17 +721,17 @@
                             <div class="card-meta">
                                 <div class="meta-row location">
                                     <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <span>Teatro Carlos Crespi</span>
+                                    <span>Auditorio principal</span>
                                 </div>
                                 <div class="meta-row speaker">
                                     <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
-                                    <span>Departamento de Pastoral - Vicerrectorado Académico</span>
+                                    <span>Departamento de Pastoral</span>
                                 </div>
                             </div>
                         </div>
                     </li>
 
-                    <!-- 02: Intervención del Rector -->
+                    <!-- 02: Conferencia Germán Parra -->
                     <li class="timeline-item color-2">
                         <div class="timeline-badge">02</div>
                         <div class="timeline-panel">
@@ -321,50 +741,51 @@
                                 </span>
                                 <span class="card-tag">Conferencia</span>
                             </div>
-                            <h4 class="card-title">De la Reforma de Carreras al Rediseño de la Arquitectura Académica UPS 2035</h4>
+                            <h4 class="card-title">Análisis del Perfil Profesional en el Marco de la Reforma Curricular</h4>
                             <div class="card-meta">
                                 <div class="meta-row location">
                                     <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <span>Teatro Carlos Crespi</span>
+                                    <span>Auditorio principal</span>
                                 </div>
                                 <div class="meta-row speaker">
                                     <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
-                                    <span>Lcdo. Fernando Pesantez PhD.</span>
+                                    <span>Germán Parra</span>
                                 </div>
                             </div>
                         </div>
                     </li>
 
+                    <!-- 03: Taller 6 (1ra parte) -->
                     <li class="timeline-item color-1">
                         <div class="timeline-badge">03</div>
                         <div class="timeline-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 09h40 - 10h40
+                                    <i class="fas fa-clock"></i> 09h40 - 10h50
                                 </span>
-                                <span class="card-tag">Conferencia</span>
+                                <span class="card-tag">Taller 6</span>
                             </div>
-                            <h4 class="card-title">La Reforma Curricular UPS: Antecedentes, Documentos Institucionales y Hoja de Ruta</h4>
+                            <h4 class="card-title">Definición y Caracterización del Perfil Profesional en el Marco de la Reforma Curricular · Primera parte</h4>
                             <div class="card-meta">
                                 <div class="meta-row location">
                                     <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <span>Teatro Carlos Crepi</span>
+                                    <span>Aulas de trabajo por grupos</span>
                                 </div>
                                 <div class="meta-row speaker">
                                     <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
-                                    <span>Ing. Ángela Flores PhD.</span>
+                                    <span>Equipo facilitador</span>
                                 </div>
                             </div>
                         </div>
                     </li>
 
-                    <!-- 03: Receso -->
+                    <!-- 04: Receso -->
                     <li class="timeline-item color-2 is-break">
                         <div class="timeline-badge">04</div>
                         <div class="timeline-panel break-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 10h40 - 11h10
+                                    <i class="fas fa-clock"></i> 10h50 - 11h20
                                 </span>
                                 <span class="card-tag break-tag">Coffee Break</span>
                             </div>
@@ -376,39 +797,34 @@
                         </div>
                     </li>
 
-                    <!-- 04: Calidad de la Educación Superior en la Era Digital: Corresponsabilidad Docente -->
-
-
-                    <!-- 05: La UPS ante la Reforma Curricular: Sentido, Alcance e Implicaciones para la Práctica Docente -->
+                    <!-- 05: Taller 6 (Continuación y Cierre) -->
                     <li class="timeline-item color-1">
                         <div class="timeline-badge">05</div>
                         <div class="timeline-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 11h10 - 12h30
+                                    <i class="fas fa-clock"></i> 11h20 - 12h30
                                 </span>
-                                <span class="card-tag">Taller 2</span>
+                                <span class="card-tag">Taller 6</span>
                             </div>
-                            <h4 class="card-title">La Sociedad, la Persona y la Identidad de la UPS hacia 2035</h4>
+                            <h4 class="card-title">Definición y Caracterización del Perfil Profesional · Continuación y Cierre</h4>
+                            <p class="card-description" style="color: #666; font-size: 13px; margin-top: 5px;">
+                                Producto: Caracterización preliminar del perfil profesional y aspectos a revisar por carrera.
+                            </p>
                             <div class="card-meta">
                                 <div class="meta-row location">
                                     <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <span>Aulas Edificio Guillermo Mensi - Mario Rizzini</span>
+                                    <span>Aulas de trabajo por grupos</span>
                                 </div>
                                 <div class="meta-row speaker">
                                     <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
-                                    <span>Directores de Área de Conocimeinto</span>
+                                    <span>Germán Parra · Equipo facilitador</span>
                                 </div>
-                            </div>
-                            <div class="card-action">
-                                <button class="btn-location-pill" (click)="showGroupInfoTaller2()">
-                                    <i class="fas fa-location-dot"></i> Ver Ubicaciones
-                                </button>
                             </div>
                         </div>
                     </li>
 
-                    <!-- 05: Fin Jornada Matutina -->
+                    <!-- 06: Fin Jornada Matutina -->
                     <li class="timeline-item color-2 is-break">
                         <div class="timeline-badge">06</div>
                         <div class="timeline-panel break-panel">
@@ -425,123 +841,52 @@
                         </div>
                     </li>
 
-
-
-                    <!-- 06: Taller IA -->
-
-                    <!-- 08: Taller IA -->
-                    <li class="timeline-item color-2">
+                    <!-- 07: Conferencia Xavier Merchán -->
+                    <li class="timeline-item color-1">
                         <div class="timeline-badge">07</div>
                         <div class="timeline-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 14h30 - 16h15
+                                    <i class="fas fa-clock"></i> 15h00 - 16h00
                                 </span>
-                                <span class="card-tag">Taller 3</span>
+                                <span class="card-tag">Conferencia</span>
                             </div>
-                            <h4 class="card-title">Reorganización del Conocimiento y Transformación de las Profesioanes hacia 2035</h4>
+                            <h4 class="card-title">Seguimiento Curricular</h4>
                             <div class="card-meta">
                                 <div class="meta-row location">
                                     <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <span>Aulas Edificio Guillermo Mensi - Mario Rizzini</span>
+                                    <span>Auditorio principal</span>
                                 </div>
                                 <div class="meta-row speaker">
                                     <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
-                                    <span>Directores de Área de Conocimeinto</span>
+                                    <span>Lcdo. Xavier Merchán, Ph.D.</span>
                                 </div>
-                            </div>
-                            <div class="card-action">
-                                <button class="btn-location-pill" (click)="showGroupInfoTaller2()">
-                                    <i class="fas fa-location-dot"></i> Ver Ubicaciones
-                                </button>
                             </div>
                         </div>
                     </li>
 
-                    <!-- 07: Receso -->
-                    <li class="timeline-item color-1 is-break">
+                    <!-- 08: Taller 6 (Revisión y Aportes) -->
+                    <li class="timeline-item color-2">
                         <div class="timeline-badge">08</div>
-                        <div class="timeline-panel break-panel">
-                            <div class="card-top-bar">
-                                <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 16h15 - 16h45
-                                </span>
-                                <span class="card-tag break-tag">Coffee Break</span>
-                            </div>
-
-                            <div class="meta-row location">
-                                <div class="meta-icon"><i class="fas fa-coffee"></i></div>
-                                <span>RECESO</span>
-                            </div>
-                        </div>
-                    </li>
-
-
-
-                    <li class="timeline-item color-2">
-                        <div class="timeline-badge">09</div>
                         <div class="timeline-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 16h45 - 17h30
+                                    <i class="fas fa-clock"></i> 16h00 - 18h00
                                 </span>
-                                <span class="card-tag">Plenaria</span>
+                                <span class="card-tag">Taller 6</span>
                             </div>
-                            <h4 class="card-title">Presentación y Contraste de los Resultados</h4>
+                            <h4 class="card-title">Taller 6: Revisión y Aportes</h4>
+                            <p class="card-description" style="color: #666; font-size: 13px; margin-top: 5px;">
+                                Producto: Observaciones y aportes para la mejora del perfil y su seguimiento curricular.
+                            </p>
                             <div class="card-meta">
                                 <div class="meta-row location">
                                     <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <span>Teatro Carlos Crespi</span>
+                                    <span>Aulas de trabajo por grupos</span>
                                 </div>
                                 <div class="meta-row speaker">
                                     <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
-                                    <span>Relatores de los Grupos</span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-item color-1">
-                        <div class="timeline-badge">10</div>
-                        <div class="timeline-panel">
-                            <div class="card-top-bar">
-                                <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 17h30 - 17h50
-                                </span>
-                                <span class="card-tag">Síntesis</span>
-                            </div>
-                            <h4 class="card-title">Síntesis y Priorización de Aportes al Macrocurrículo</h4>
-                            <div class="card-meta">
-                                <div class="meta-row location">
-                                    <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <span>Teatro Carlos Crespi</span>
-                                </div>
-                                <div class="meta-row speaker">
-                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
-                                    <span>Vicerrectorado Académico - Directores del Área de Conocimiento </span>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="timeline-item color-2">
-                        <div class="timeline-badge">11</div>
-                        <div class="timeline-panel">
-                            <div class="card-top-bar">
-                                <span class="card-time-badge">
-                                    <i class="fas fa-clock"></i> 17h50 - 18h00
-                                </span>
-                                <span class="card-tag">Cierre</span>
-                            </div>
-                            <h4 class="card-title">Explicación de los Siguientes Pasos</h4>
-                            <div class="card-meta">
-                                <div class="meta-row location">
-                                    <div class="meta-icon"><i class="fas fa-map-marker-alt"></i></div>
-                                    <span>Teatro Carlos Crespi</span>
-                                </div>
-                                <div class="meta-row speaker">
-                                    <div class="meta-icon"><i class="fas fa-user-tie"></i></div>
-                                    <span>P. Juan Cárdenas sdb. PhD. - Vicerrectorado Académico</span>
+                                    <span>Equipo facilitador · Directores y delegados de Área</span>
                                 </div>
                             </div>
                         </div>
@@ -549,7 +894,7 @@
 
                     <!-- 09: Fin de la Jornada Vespertina -->
                     <li class="timeline-item color-1 is-break">
-                        <div class="timeline-badge">12</div>
+                        <div class="timeline-badge">09</div>
                         <div class="timeline-panel break-panel">
                             <div class="card-top-bar">
                                 <span class="card-time-badge">
