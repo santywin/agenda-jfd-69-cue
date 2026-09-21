@@ -168,8 +168,23 @@
   color: #003366;
   font-weight: 800;
   font-size: 1.15rem;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
   line-height: 1.4;
+}
+
+.teacher-meta {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  i {
+    color: #003366;
+    opacity: 0.7;
+    font-size: 0.8rem;
+  }
 }
 
 .card-expanded-content {
@@ -194,23 +209,98 @@
 
   strong {
     display: block;
-    font-size: 0.7rem;
+    font-size: 0.72rem;
     text-transform: uppercase;
     color: #667b99;
     letter-spacing: 0.5px;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
   }
 
   span {
-    font-size: 0.9rem;
+    font-size: 0.92rem;
     color: #003366;
     font-weight: 700;
+  }
+
+  .pill-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    i {
+      color: #003366;
+      font-size: 0.85rem;
+
+      &.text-muted {
+        color: #94a3b8 !important;
+      }
+    }
+  }
+
+  .pill-location-multi {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .sub-taller {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      background: rgba(0, 51, 102, 0.04);
+      padding: 6px 10px;
+      border-radius: 6px;
+
+      .sub-badge {
+        font-size: 0.68rem;
+        font-weight: 700;
+        color: #64748b;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+      }
+
+      .sub-value {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.88rem;
+        font-weight: 700;
+        color: #003366;
+
+        i {
+          font-size: 0.8rem;
+          color: #003366;
+
+          &.text-muted {
+            color: #94a3b8 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .not-called {
+    color: #94a3b8 !important;
+    font-weight: 500 !important;
+    font-style: italic;
   }
 
   &.yellow { 
     border-left-color: #ffcc00; 
     background: #fffdf5;
+
+    .pill-location i:not(.text-muted) {
+      color: #b38600;
+    }
+
+    .pill-location-multi .sub-taller {
+      background: rgba(255, 204, 0, 0.1);
+
+      .sub-value i:not(.text-muted) {
+        color: #b38600;
+      }
+    }
   }
+
   &.blue { 
     border-left-color: #003366; 
     background: #f5fbff;

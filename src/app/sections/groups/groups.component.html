@@ -53,24 +53,57 @@
                         </div>
                         <div class="card-content">
                             <h5 class="teacher-name">{{ grupo.NOMBRE }}</h5>
+                            <p class="teacher-meta" *ngIf="grupo.CORREO">
+                                <i class="fas fa-envelope"></i> {{ grupo.CORREO }}
+                            </p>
                         </div>
 
                         <div class="card-expanded-content" *ngIf="grupo.expandido">
                             <div class="info-pill blue">
                                 <strong>Lunes 21 - Taller 1</strong>
-                                <span>{{ grupo.TALLER1 }}</span>
+                                <div class="pill-location">
+                                    <i class="fas" [ngClass]="grupo.taller1 === 'No Convocado' ? 'fa-info-circle text-muted' : 'fa-map-marker-alt'"></i>
+                                    <span [class.not-called]="grupo.taller1 === 'No Convocado'">{{ grupo.taller1 }}</span>
+                                </div>
                             </div>
                             <div class="info-pill yellow">
                                 <strong>Martes 22 - Talleres 2 y 3</strong>
-                                <span>{{ grupo.TALLER22 }}</span>
+                                <div class="pill-location">
+                                    <i class="fas" [ngClass]="grupo.taller2 === 'No Convocado' ? 'fa-info-circle text-muted' : 'fa-map-marker-alt'"></i>
+                                    <span [class.not-called]="grupo.taller2 === 'No Convocado'">{{ grupo.taller2 }}</span>
+                                </div>
                             </div>
                             <div class="info-pill blue">
                                 <strong>Miércoles 23 - Talleres 4 y 5</strong>
-                                <span>{{ grupo.TALLER4 }}</span>
+                                <div class="pill-location-multi" *ngIf="grupo.taller4 !== grupo.taller5; else singleWed">
+                                    <div class="sub-taller">
+                                        <span class="sub-badge">Taller 4 (Mañana):</span>
+                                        <span class="sub-value">
+                                            <i class="fas" [ngClass]="grupo.taller4 === 'No Convocado' ? 'fa-info-circle text-muted' : 'fa-map-marker-alt'"></i>
+                                            <span [class.not-called]="grupo.taller4 === 'No Convocado'">{{ grupo.taller4 }}</span>
+                                        </span>
+                                    </div>
+                                    <div class="sub-taller">
+                                        <span class="sub-badge">Taller 5 (Tarde):</span>
+                                        <span class="sub-value">
+                                            <i class="fas" [ngClass]="grupo.taller5 === 'No Convocado' ? 'fa-info-circle text-muted' : 'fa-map-marker-alt'"></i>
+                                            <span [class.not-called]="grupo.taller5 === 'No Convocado'">{{ grupo.taller5 }}</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <ng-template #singleWed>
+                                    <div class="pill-location">
+                                        <i class="fas" [ngClass]="grupo.taller4 === 'No Convocado' ? 'fa-info-circle text-muted' : 'fa-map-marker-alt'"></i>
+                                        <span [class.not-called]="grupo.taller4 === 'No Convocado'">{{ grupo.taller4 }}</span>
+                                    </div>
+                                </ng-template>
                             </div>
                             <div class="info-pill yellow">
                                 <strong>Jueves 24 - Taller 6</strong>
-                                <span>{{ grupo.TALLER5 }}</span>
+                                <div class="pill-location">
+                                    <i class="fas" [ngClass]="grupo.taller6 === 'No Convocado' ? 'fa-info-circle text-muted' : 'fa-map-marker-alt'"></i>
+                                    <span [class.not-called]="grupo.taller6 === 'No Convocado'">{{ grupo.taller6 }}</span>
+                                </div>
                             </div>
                         </div>
 

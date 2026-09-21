@@ -1,7 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {ExcelService} from '../../services/excel.service';
-import Swal from 'sweetalert2';
-
 
 @Component({
     selector: 'app-landing',
@@ -19,18 +17,28 @@ export class GroupsComponent implements OnInit {
 
     ngOnInit(): void {
         this.excelService.readExcelFile('/assets/data/Grupos_66.xlsx').then((excelData: any[]) => {
-            this.gruposOriginal = excelData;
+            this.gruposOriginal = excelData.map(g => ({
+                ...g,
+                taller1: g['TALLER 1'] || 'No Convocado',
+                taller2: g['TALLER 2'] || 'No Convocado',
+                taller3: g['TALLER 3'] || 'No Convocado',
+                taller4: g['TALLER 4'] || 'No Convocado',
+                taller5: g['TALLER 5'] || 'No Convocado',
+                taller6: g['TALLER 6'] || 'No Convocado',
+                expandido: false
+            }));
             this.gruposFiltrados = [...this.gruposOriginal];
         }).catch(err => {
             console.error('Error al cargar datos de Excel:', err);
         });
     }
 
-
     filtrar(): void {
-        const filtro = this.filtroGrupo.toLowerCase();
+        const filtro = this.filtroGrupo.toLowerCase().trim();
         this.gruposFiltrados = this.gruposOriginal.filter(grupo =>
-            grupo.NOMBRE?.toLowerCase().includes(filtro)
+            grupo.NOMBRE?.toLowerCase().includes(filtro) ||
+            grupo.CORREO?.toLowerCase().includes(filtro) ||
+            (grupo.CEDULA || grupo['CÉDULA'])?.toString().includes(filtro)
         );
         this.currentPage = 1;
     }
@@ -61,34 +69,6 @@ export class GroupsComponent implements OnInit {
             this.currentPage++;
         }
     }
-
-    // Dentro de tu clase GroupsComponent
-    obtenerAula(grupo: any): string {
-        if (!grupo.curso) return 'Sin Inscripción';
-
-        const cursoNorm = grupo.curso.toLowerCase();
-
-        if (cursoNorm.includes('generación de contenido')) {
-            return 'Generación de Contenido Educativo con IA - Auditorio Luna Tobar';
-        }
-
-        // 2. Herramientas de Gamificación con IA
-        if (cursoNorm.includes('gamificación')) {
-            return 'Herramientas de Gamificación con IA - Auditorio Aurelio Pischedda';
-        }
-
-        // 3. Realidad Aumentada con IA
-        if (cursoNorm.includes('realidad aumentada')) {
-            return 'Realidad Aumentada con IA - Auditorio Luis Arba';
-        }
-
-        // 4. Ciencias de Datos con IA
-        if (cursoNorm.includes('datos')) {
-            return 'Ciencias de Datos con IA - Auditorio Leonidas Proaño';
-        }
-        return 'Aula por asignar';
-    }
-
 }
 
 
