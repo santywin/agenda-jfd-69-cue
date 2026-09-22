@@ -16,21 +16,30 @@ export class GroupsComponent implements OnInit {
     constructor(private excelService: ExcelService) {}
 
     ngOnInit(): void {
-        this.excelService.readExcelFile('/assets/data/Grupos_66.xlsx').then((excelData: any[]) => {
+        this.excelService.readExcelFile('assets/data/Grupos_66.xlsx').then((excelData: any[]) => {
             this.gruposOriginal = excelData.map(g => ({
                 ...g,
-                taller1: g['TALLER 1'] || 'No Convocado',
-                taller2: g['TALLER 2'] || 'No Convocado',
-                taller3: g['TALLER 3'] || 'No Convocado',
-                taller4: g['TALLER 4'] || 'No Convocado',
-                taller5: g['TALLER 5'] || 'No Convocado',
-                taller6: g['TALLER 6'] || 'No Convocado',
+                taller1: this.getTallerValue(g, 1),
+                taller2: this.getTallerValue(g, 2),
+                taller3: this.getTallerValue(g, 3),
+                taller4: this.getTallerValue(g, 4),
+                taller5: this.getTallerValue(g, 5),
+                taller6: this.getTallerValue(g, 6),
                 expandido: false
             }));
             this.gruposFiltrados = [...this.gruposOriginal];
         }).catch(err => {
             console.error('Error al cargar datos de Excel:', err);
         });
+    }
+
+    private getTallerValue(row: any, num: number): string {
+        const key = Object.keys(row).find(k => {
+            const normalized = k.trim().toUpperCase();
+            return normalized.startsWith(`TALLER ${num}`) || normalized.startsWith(`TALLER${num}`);
+        });
+        const val = key ? row[key] : null;
+        return (val && String(val).trim() !== '') ? String(val).trim() : 'No Convocado';
     }
 
     filtrar(): void {

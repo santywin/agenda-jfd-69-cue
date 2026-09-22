@@ -79,7 +79,8 @@ export class FormComponent implements OnInit {
         const cleanCedula = cedula ? cedula.toString().replace(/\D/g, '') : '';
         // Buscamos en el array del Excel (padronDocentes)
         const docente = this.padronDocentes.find(d => {
-            const dCedula = d.CEDULA ? String(d.CEDULA).padStart(10, '0').replace(/\D/g, '') : '';
+            const valCed = d.CEDULA || d['CÉDULA'] || d['Cedula'] || d['cedula'];
+            const dCedula = valCed ? String(valCed).padStart(10, '0').replace(/\D/g, '') : '';
             return dCedula === cleanCedula && cleanCedula !== '';
         });
         if (docente) {
