@@ -21,7 +21,7 @@
             </h1>
 
             <div class="top-tag">
-                <span class="tag-text">Sede Quito</span>
+                <span class="tag-text">Sede Guayaquil</span>
                 <span class="tag-divider">•</span>
             </div>
         </div>
@@ -60,26 +60,26 @@
 
                         <div class="card-expanded-content" *ngIf="grupo.expandido">
                             <div class="info-pill blue">
-                                <strong>Lunes 21 - Taller 1</strong>
+                                <strong>Lunes 12 - Taller 1</strong>
                                 <div class="pill-location">
                                     <i class="fas" [ngClass]="grupo.taller1 === 'No Convocado' ? 'fa-info-circle text-muted' : 'fa-map-marker-alt'"></i>
                                     <span [class.not-called]="grupo.taller1 === 'No Convocado'">{{ grupo.taller1 }}</span>
                                 </div>
                             </div>
                             <div class="info-pill yellow">
-                                <strong>Martes 22 - Talleres 2 y 3</strong>
+                                <strong>Martes 13 - Talleres 2 y 3</strong>
                                 <div class="pill-location">
                                     <i class="fas" [ngClass]="grupo.taller2 === 'No Convocado' ? 'fa-info-circle text-muted' : 'fa-map-marker-alt'"></i>
                                     <span [class.not-called]="grupo.taller2 === 'No Convocado'">{{ grupo.taller2 }}</span>
                                 </div>
                             </div>
                             <div class="info-pill blue">
-                                <strong>Miércoles 23 - Talleres 4 y 5</strong>
+                                <strong>Miércoles 14 - Talleres 4 y 5</strong>
                                 <div class="pill-location-multi" *ngIf="grupo.taller4 !== grupo.taller5; else singleWed">
                                     <div class="sub-taller">
                                         <span class="sub-badge">Taller 4 (Mañana):</span>
                                         <span class="sub-value">
-                                            <i class="fas" [ngClass]="grupo.taller4 === 'No Convocado' ? 'fa-info-circle text-muted' : 'fa-map-marker-alt'"></i>
+                                             <i class="fas" [ngClass]="grupo.taller4 === 'No Convocado' ? 'fa-info-circle text-muted' : 'fa-map-marker-alt'"></i>
                                             <span [class.not-called]="grupo.taller4 === 'No Convocado'">{{ grupo.taller4 }}</span>
                                         </span>
                                     </div>
@@ -99,7 +99,7 @@
                                 </ng-template>
                             </div>
                             <div class="info-pill yellow">
-                                <strong>Jueves 24 - Taller 6</strong>
+                                <strong>Jueves 15 - Taller 6</strong>
                                 <div class="pill-location">
                                     <i class="fas" [ngClass]="grupo.taller6 === 'No Convocado' ? 'fa-info-circle text-muted' : 'fa-map-marker-alt'"></i>
                                     <span [class.not-called]="grupo.taller6 === 'No Convocado'">{{ grupo.taller6 }}</span>

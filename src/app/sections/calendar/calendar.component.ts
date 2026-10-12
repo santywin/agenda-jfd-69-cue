@@ -22,7 +22,7 @@ export class CalendarComponent implements OnInit {
     }
 
     isToday(day: number, monthStr: string): boolean {
-        if (monthStr === 'SEPTIEMBRE' && this.todayMonth === 8 && this.todayDay === day) {
+        if (monthStr === 'OCTUBRE' && this.todayMonth === 9 && this.todayDay === day) {
             return true;
         }
         return false;
